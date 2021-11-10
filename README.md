@@ -21,4 +21,4 @@ I have covered below mentioned use cases
 2. Schedular get given product price and compare it with added products in the cart IF product price != Cart product price THEN update Cart Product price
 3. Update that product price as well. 
 
-
+![General Architecture For Shooping Cart](https://github.com/mrudaysharma/SpringBootShoppingCart/blob/develop/ArchitectureShoppingCart.JPG)
