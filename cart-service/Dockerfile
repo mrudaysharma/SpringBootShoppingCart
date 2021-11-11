@@ -1,9 +1,7 @@
-ENV DOCKERVERSION=20.10.8
-
-RUN curl -fsSLO https://download.docker.com/linux/static/stable/x86_64/docker-${DOCKERVERSION}.tgz \
-  && tar xzvf docker-${DOCKERVERSION}.tgz --strip 1 \
-                 -C /usr/local/bin docker/docker \
-  && rm docker-${DOCKERVERSION}.tgz
+RUN curl -fsSLO https://get.docker.com/builds/Linux/x86_64/docker-20.10.8.tgz \
+  && tar xzvf docker-20.10.8.tgz \
+  && mv docker/docker /usr/local/bin \
+  && rm -r docker docker-20.10.8.tgz
 
 FROM gradle:jdk11 as builder
 
